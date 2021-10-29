@@ -53,6 +53,7 @@ li a{
     height: 650px;
     position: relative;
     border-radius: 15px;
+    background-position: center;
 }
 
 .banner-text{
@@ -73,7 +74,7 @@ li a{
 /*seconda section*/
 
 .top{
-    margin: 20px 0px;
+    margin: 40px 0px;
 }
 
 .top span{
@@ -95,6 +96,7 @@ li a{
 .col-cx{
     width: 60%;
     border-radius: 15px;
+    padding:0px 20px;
 }
 
 .sx img,.dx img,.cx img{
@@ -104,8 +106,17 @@ li a{
     border-radius: 15px;
 }
 
-.cx img{
-    padding:0px 20px;
+section:last-child h3, 
+section:last-child p{
+    margin:10px 0px;
+}
+
+/*Footer*/
+
+footer div{
+    margin:40px 0px;
+
+    text-align: center;
 }
 
 
