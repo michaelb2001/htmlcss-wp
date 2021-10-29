@@ -3,7 +3,6 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-size: 1em;
     font-family: "Monserrat";
 }
 
@@ -16,8 +15,9 @@
 #logo img{
     height: 100px;
     width: auto;
+    border-right: 1px grey solid;
+    padding-right:15px;
 }
-
 
 /* menu*/
 
@@ -42,11 +42,17 @@ li a{
 /*prima section*/
 
 .banner{
-    background-image: url(../img/banner.jpg);
+    background:
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
+    ),
+    /* bottom, image */
+    url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
-    opacity:0.7;
+    height: 600px;
     position: relative;
 }
 
@@ -54,4 +60,13 @@ li a{
     position:absolute;
     bottom:20px;
     left: 10px;
+    color:white;
+    margin:20px;
+}
+
+.banner-text h2{
+    font-size: 2.5em;
+}
+.banner-text p{
+    font-size: 1.8em;
 }
